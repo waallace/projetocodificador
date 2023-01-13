@@ -34,7 +34,7 @@ function criptografar() {
     var campoResult = document.getElementById("texto2");
     var escrever = digitar.value;
 
-    var cripResul = escrever.replace(/e/g , "enter").replace(/i/ , "imes").replace(/a/ , "ai").replace(/o/ , "ober").replace(/u/ , "ufat");
+    var cripResul = escrever.replace(/e/g , "enter").replace(/i/g , "imes").replace(/a/g , "ai").replace(/o/g , "ober").replace(/u/g , "ufat");
     console.log(cripResul);
     campoResult.value = cripResul;
     
@@ -55,7 +55,7 @@ function descriptografar() {
 
 //Função Botão copiar do texto lado esquerdo.
 function copiar() {
-    var copia = document.getElementById("texto");
+    var copia = document.getElementById("texto2");
     copia.select();
     document.execCommand("copy");
     alert("Texto foi copiado");
