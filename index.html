@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge - Projeto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="projeto.css">
+    
+</head>
+<body>
+<!--Cabeçario-->
+  <script src="script.js"></script>  
+
+    <header>
+        <h1><img src="logo.png"></h1>
+        <label for="texto">Digite seu texto</label>
+        <textarea cols="100" rows="20" id="texto" onkeypress="return ApenasLetrasMinusculas(event,this)"></textarea>
+        <textarea cols="100" rows="20" id="texto2" ></textarea>
+    </header>
+<!--Corpo-->    
+    <main>
+        <div class="caixa">
+            <nav>
+                <ul>
+                    <p>Apenas Letras Minúscula Sem Assento.</p>
+                    
+                    <li>
+                        
+                    <input type="button" onClick="criptografar()" value="Criptografar" class="botao">
+                    </li>
+
+                    <li>
+                        <input type="button" onclick="descriptografar()" value="Descriptografar" class="botao2">
+                    </li> 
+
+                    <li>
+                        
+                        <input type="button" onclick="copiar()" value="Copiar"  class="copiar">
+                    </li>    
+                </ul>
+            </nav>
+        </div>
+    </main>
+<!--Rodapé-->
+    <footer>
+        <h1>Desenvolvido por Wallace Santos</h1>
+        <div class="icones">
+            <a href="https://www.instagram.com/wallace.santoos/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://filosofiasinonimodepensar.com.br/"><ion-icon name="person-outline"></ion-icon></a>
+            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
